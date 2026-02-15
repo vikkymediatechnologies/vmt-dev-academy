@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 // import { useEffect, useState } from "react";
 // import { Link, useSearchParams } from "react-router-dom";
 // import { motion } from "framer-motion";
@@ -382,7 +380,6 @@
 
 
 
->>>>>>> 8bb5ce5 (trying to push)
 import { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -390,10 +387,7 @@ import Layout from "@/components/Layout";
 import { useLearnerData } from "@/hooks/useLearnerData";
 import { useAuth } from "@/hooks/useAuth";
 import { usePayment } from "@/hooks/usePayment";
-<<<<<<< HEAD
-=======
 import StudentCourses from "@/components/StudentCourses";
->>>>>>> 8bb5ce5 (trying to push)
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -707,23 +701,6 @@ const DashboardPage = () => {
             />
           </div>
 
-<<<<<<< HEAD
-          {/* COURSES SECTION - Only show if active (free or paid) */}
-          {isPaidActive || isFreeActive ? (
-            <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-              <h3 className="text-xl font-semibold flex items-center gap-2 mb-4">
-                <GraduationCap className="h-5 w-5 text-accent" />
-                Your Courses
-              </h3>
-              <div className="text-center py-12 text-muted-foreground">
-                <BookOpen className="h-12 w-12 mx-auto mb-4 opacity-50" />
-                <p>Courses will appear here once your instructor adds them</p>
-                <p className="text-sm mt-2">
-                  {isFreeActive && "Free trial: Access to first 5 modules"}
-                  {isPaidActive && "Premium: Full access to all courses"}
-                </p>
-              </div>
-=======
           {/* COURSES SECTION */}
           {isPaidActive || isFreeActive ? (
             <div>
@@ -732,7 +709,6 @@ const DashboardPage = () => {
                 Your Courses
               </h3>
               <StudentCourses />
->>>>>>> 8bb5ce5 (trying to push)
             </div>
           ) : (
             /* LOCKED STATE - Show upgrade message */
