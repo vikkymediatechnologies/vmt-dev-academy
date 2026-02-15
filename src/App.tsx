@@ -16,7 +16,11 @@ import Tracks from "./pages/Tracks";
 import Modes from "./pages/Modes";
 import Onboarding from "./pages/Onboarding";
 import Dashboard from "./pages/Dashboard";
+<<<<<<< HEAD
 import AdminDashboard from "./pages/AdminDashboard";
+=======
+import SimpleAdminDashboard from "./pages/SimpleAdminDashboard";
+>>>>>>> 8bb5ce5 (trying to push)
 import Auth from "./pages/Auth";
 import AdminAuthPage from "./pages/AdminAuthPage";
 import Settings from "./pages/Settings";
@@ -69,7 +73,11 @@ const App = () => (
               path="/admin"
               element={
                 <AdminRoute>
+<<<<<<< HEAD
                   <AdminDashboard />
+=======
+                  <SimpleAdminDashboard />
+>>>>>>> 8bb5ce5 (trying to push)
                 </AdminRoute>
               }
             />
